@@ -3,13 +3,5 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "outputDirectory": "build/client",
-  "framework": "remix",
-  "functions": {
-    "functions/**": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "env": {
-    "NODE_ENV": "production"
-  }
+  "framework": "remix"
 }
