@@ -10,6 +10,9 @@ import rehypePrism from '@mapbox/rehype-prism';
 
 export default defineConfig({
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
+  css: {
+    postcss: './postcss.config.cjs',
+  },
   build: {
     assetsInlineLimit: 1024,
   },

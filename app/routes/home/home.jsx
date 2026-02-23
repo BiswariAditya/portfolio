@@ -5,7 +5,6 @@ import oxyiotDashboard from '~/assets/oxyiot-home.jpg';
 import oxyiotLogin from '~/assets/oxyiot-splash.jpg';
 import daykartScreen1 from '~/assets/daykart-screen1.jpg';
 import daykartScreen2 from '~/assets/daykart-screen2.jpg';
-import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
 import { Profile } from './profile';
@@ -165,7 +164,6 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
-      <Footer/>
     </div>
   );
 };

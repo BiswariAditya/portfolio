@@ -96,7 +96,7 @@ export function createMediaTokenProperties() {
 }
 
 const layerStyles = squish(`
-  @layer theme, base, components, layout;
+  @layer reset, theme, base, components, layout;
 `);
 
 const tokenStyles = squish(`
