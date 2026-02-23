@@ -100,6 +100,13 @@ export default function App() {
     );
   }, []);
 
+  const getInitialBgColor = () => {
+    if (theme === 'light') {
+      return 'oklch(96.12% 0 0)';
+    }
+    return 'oklch(17.76% 0 0)';
+  };
+
   return (
     <html lang="en">
       <head>
@@ -116,7 +123,7 @@ export default function App() {
         <Links />
         <link rel="canonical" href={canonicalUrl} />
       </head>
-      <body data-theme={theme}>
+      <body data-theme={theme} style={{ backgroundColor: getInitialBgColor() }}>
         <ThemeProvider theme={theme} toggleTheme={toggleTheme}>
           <Progress />
           <VisuallyHidden showOnFocus as="a" className={styles.skip} href="#main-content">

@@ -113,6 +113,17 @@ const tokenStyles = squish(`
   [data-theme='light'] {
     ${createThemeProperties(themes.light)}
   }
+
+  /* Ensure background color applies immediately on theme change */
+  html[data-theme='dark'],
+  body[data-theme='dark'] {
+    background-color: oklch(17.76% 0 0);
+  }
+
+  html[data-theme='light'],
+  body[data-theme='light'] {
+    background-color: oklch(96.12% 0 0);
+  }
 `);
 
 const fontStyles = squish(`
